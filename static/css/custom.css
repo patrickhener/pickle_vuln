@@ -1,0 +1,19 @@
+body {
+  padding-top: 3.5rem;
+}
+
+.bg-dark {
+  background-color: #939699 !important;
+}
+
+.jumbotron {
+  background-color: #e01323 !important;
+}
+
+h1.display-3 {
+  color: white;
+}
+
+a {
+  color: white;
+}

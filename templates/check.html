@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+{% if pickle %}
+ <strong>Pickle wurde getickled!</strong> Unpickling hat auf dem Server stattgefunden.
+{% endif %}
+
+{% if error %}
+ <strong>Fehler!</strong> Leider hat das nicht funktioniert. Bitte korrekte ID angeben!
+{% endif %}
+
+{% if comment %}
+  <strong>Erfolgreicht!</strong> Kommentar ist vorhanden. 
+{% endif %}
+
+<h1>Hier gibt es nichts zu sehen</h1>
+
+{% endblock %}
+
+

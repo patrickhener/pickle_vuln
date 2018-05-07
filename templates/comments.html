@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">Verbesserungsvorschläge</h1>
+    </div>
+</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="entries">
+            {% for entry in entries %}
+                <li><strong>{{ entry.title }}</strong>: <i>{{ entry.text|safe }}</i></li>
+            {% else %}
+                <li><em>Nicht verfügbar. Es wurden keine Einträge gefunden.</em></li>
+            {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endblock %}%             

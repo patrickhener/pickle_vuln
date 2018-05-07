@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block body %}
+
+ <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Startseite</h1>
+            <p>Hallo und herzlich Willkommen. Hinterlasse doch <strong><a 
+href="submit">hier</a></strong> 
+bitte deinen Namen und einen Verbesserungsvorschlag.</p>
+        </div>
+    </div>
+    <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-4">
+        <h2>Die besten Vorschläge</h2>
+        <p>Hier findest du eine Übersicht über die bereits eingesendeten Vorschläge!</p>
+        <p><a class="btn btn-secondary" href="{{ url_for('comments') }}" 
+role="button">Vorschläge ansehen! 
+&raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+        <h2>Mehr Vorschläge</h2>
+        <p>Sende deine eigenen Vorschläge ein und beteilige dich!</p>
+        <p><a class="btn btn-secondary" href="{{ url_for('submit') }}" role="button">Vorschlag 
+einsenden! 
+&raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+        <h2>Und es folgt noch mehr!</h2>
+        <p>Wir fügen immer weiter Features hinzu! Stay tuned!</p>
+        </div>
+    </div>
+    </div> <!-- /container -->
+
+{% endblock %}
+
